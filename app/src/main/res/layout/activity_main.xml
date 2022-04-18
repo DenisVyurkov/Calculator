@@ -9,6 +9,7 @@
 
 
     <EditText
+        android:fontFamily="@font/CherryCocktail"
         android:id="@+id/editText"
         android:textSize="40pt"
         android:background="@color/grey"
@@ -27,53 +28,61 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="@dimen/btn_radius"
             android:id="@+id/buAC"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ac_size"
             android:onClick="acClick"
-            android:text="AC"
+            android:text="@string/ac"
             android:height="30pt"
             android:width="30pt"
             android:layout_weight="1"
             android:layout_marginRight="1pt"
             android:backgroundTint="@color/blue" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buPlusMinus"
+            android:textSize="@dimen/plus_minus_size"
             android:onClick="ClickNumber"
-            android:text="+/-"
+            android:text="@string/PlusMinus"
             android:height="30pt"
             android:width="30pt"
             android:layout_weight="1"
             android:layout_marginRight="1pt"
-            android:backgroundTint="@color/blue" />
+            android:backgroundTint="@color/blue"
+            style="@style/CalcButton"/>
 
         <Button
             android:id="@+id/buDivide"
+            android:textSize="@dimen/divide_size"
             android:onClick="operation"
-            android:text="/"
+            android:text="@string/Divide"
             android:height="30pt"
-            android:width="30pt"
-            android:layout_weight="1"
-            android:layout_marginRight="1pt"
-            android:backgroundTint="@color/blue" />
+            android:width="10pt"
+            style="@style/CalcButton" />
 
         <Button
             android:id="@+id/buMultiply"
+            android:textSize="@dimen/multiply_size"
             android:onClick="operation"
-            android:text="*"
+            android:text="@string/Multiply"
             android:height="30pt"
-            android:width="30pt"
+            android:width="20pt"
             android:layout_weight="1"
-            android:layout_marginRight="1pt"
-            android:backgroundTint="@color/blue" />
+            android:layout_marginRight="2pt"
+            android:backgroundTint="@color/blue"
+            style="@style/CalcButton"
+            />
     </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu7"
+                android:textSize="@dimen/seven_size"
                 android:onClick="ClickNumber"
-                android:text="7"
+                android:text="@string/Seven"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -82,8 +91,9 @@
 
             <Button
                 android:id="@+id/bu8"
+                android:textSize="@dimen/eight_size"
                 android:onClick="ClickNumber"
-                android:text="8"
+                android:text="@string/Eight"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -92,8 +102,9 @@
 
             <Button
                 android:id="@+id/bu9"
+                android:textSize="@dimen/nine_size"
                 android:onClick="ClickNumber"
-                android:text="9"
+                android:text="@string/Nine"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -102,21 +113,24 @@
 
             <Button
                 android:id="@+id/buPercent"
+                android:textSize="@dimen/percent_size"
                 android:onClick="ClickPercent"
-                android:text="%"
+                android:text="@string/Percent"
                 android:height="30pt"
-                android:width="30pt"
+                android:width="25pt"
                 android:layout_weight="1"
                 android:layout_marginRight="1pt"
-                android:backgroundTint="@color/blue" />
+                android:backgroundTint="@color/blue"
+                style="@style/CalcButton"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu4"
+                android:textSize="@dimen/four_size"
                 android:onClick="ClickNumber"
-                android:text="4"
+                android:text="@string/Four"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -125,8 +139,9 @@
 
             <Button
                 android:id="@+id/bu5"
+                android:textSize="@dimen/five_size"
                 android:onClick="ClickNumber"
-                android:text="5"
+                android:text="@string/Five"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -135,8 +150,9 @@
 
             <Button
                 android:id="@+id/bu6"
+                android:textSize="@dimen/six_size"
                 android:onClick="ClickNumber"
-                android:text="6"
+                android:text="@string/Six"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -145,21 +161,24 @@
 
             <Button
                 android:id="@+id/buPlus"
+                android:textSize="@dimen/plus_size"
                 android:onClick="operation"
-                android:text="+"
+                android:text="@string/Plus"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
                 android:layout_marginRight="1pt"
-                android:backgroundTint="@color/blue" />
+                android:backgroundTint="@color/blue"
+                style="@style/CalcButton"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu1"
+                android:textSize="@dimen/one_size"
                 android:onClick="ClickNumber"
-                android:text="1"
+                android:text="@string/One"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -168,8 +187,9 @@
 
             <Button
                 android:id="@+id/bu2"
+                android:textSize="@dimen/two_size"
                 android:onClick="ClickNumber"
-                android:text="2"
+                android:text="@string/Two"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -178,8 +198,9 @@
 
             <Button
                 android:id="@+id/bu3"
+                android:textSize="@dimen/three_size"
                 android:onClick="ClickNumber"
-                android:text="3"
+                android:text="@string/Three"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
@@ -188,13 +209,15 @@
 
             <Button
                 android:id="@+id/buMinus"
+                android:textSize="@dimen/minus_size"
                 android:onClick="operation"
-                android:text="-"
+                android:text="@string/Minus"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="1"
                 android:layout_marginRight="1pt"
-                android:backgroundTint="@color/blue" />
+                android:backgroundTint="@color/blue"
+                style="@style/CalcButton"/>
         </TableRow>
 </TableLayout>
     <LinearLayout
@@ -207,8 +230,9 @@
 
             <Button
                 android:id="@+id/bu0"
+                android:textSize="@dimen/zero_size"
                 android:onClick="ClickNumber"
-                android:text="0"
+                android:text="@string/Zero"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="2"
@@ -217,8 +241,9 @@
 
             <Button
                 android:id="@+id/buDot"
+                android:textSize="@dimen/dot_size"
                 android:onClick="ClickNumber"
-                android:text="."
+                android:text="@string/Dot"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="3"
@@ -227,13 +252,15 @@
 
             <Button
                 android:id="@+id/buEqual"
+                android:textSize="@dimen/equal_size"
                 android:onClick="ClickEqual"
-                android:text="="
+                android:text="@string/Equal"
                 android:height="30pt"
                 android:width="30pt"
                 android:layout_weight="3"
                 android:layout_marginRight="1pt"
-                android:backgroundTint="@color/blue" />
+                android:backgroundTint="@color/blue"
+                style="@style/CalcButton"/>
         </TableRow>
     </LinearLayout>
 

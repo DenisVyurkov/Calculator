@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <style name="CalcButton">
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:width">20dp</item>
+
+    </style>
+
+    <dimen name="btn_text_size">15sp</dimen>
+</resources>
